@@ -6,7 +6,10 @@ let ms = 0;
 let startRecord;
 
 function startRecordTime() {
-    startRecord = setInterval("ms ++;", 1);
+    startRecord = setInterval(() => {
+        ms ++;
+        scoreText.innerHTML = ms + "ms";
+    }, 1);
 }
 
 buttom.addEventListener("click", function() {
@@ -18,7 +21,6 @@ buttom.addEventListener("click", function() {
         clickArea.style.backgroundColor = "#00b900";
         clickArea.addEventListener("click", () => {
             window.clearInterval(startRecord);
-            scoreText.innerHTML = ms + "ms";
         });
     }, 3000);
 });
