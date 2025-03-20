@@ -1,4 +1,4 @@
-const buttom = document.getElementById("buttom");
+const buttom = document.getElementById("button");
 const clickArea = document.getElementById("clickArea");
 const scoreText = document.getElementById("sorceText")
 
