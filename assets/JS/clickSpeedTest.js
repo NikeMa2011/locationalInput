@@ -1,6 +1,6 @@
 const buttom = document.getElementById("button");
 const clickArea = document.getElementById("clickArea");
-const scoreText = document.getElementById("sorceText");
+const scoreText = document.getElementById("scoreText");
 
 let ms = 0;
 let startRecord;
@@ -17,7 +17,7 @@ buttom.addEventListener("click", function() {
         clickArea.style.backgroundColor = "#00b900";
         clickArea.addEventListener("click", () => {
             window.clearInterval(startRecord);
-            scoreText.innerHTML = "your score: " + ms + "ms";
+            scoreText.innerHTML = ms + "ms";
         });
     }, 3000);
 });
