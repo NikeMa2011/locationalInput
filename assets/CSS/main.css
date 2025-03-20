@@ -7,8 +7,13 @@
     width: 100vw;
 }
 #button {
+    display: flex;
     background-color: #fff;
-    height: 60px;
-    width: 200px;
+    height: max-content;
+    width: max-content;
     border: 2px solid #000;
+}
+#buttonText {
+    font-size: 30px;
+    font-family: sans-serif;
 }
