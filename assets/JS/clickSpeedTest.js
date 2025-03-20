@@ -17,7 +17,7 @@ buttom.addEventListener("click", function() {
         clickArea.style.backgroundColor = "#00b900";
         clickArea.addEventListener("click", () => {
             window.clearInterval(startRecord);
-            scoreText = "your score: " + ms + "ms";
+            scoreText.innerHTML = "your score: " + ms + "ms";
         });
     }, 3000);
 });
