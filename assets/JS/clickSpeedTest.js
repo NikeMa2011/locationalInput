@@ -11,9 +11,10 @@ function startRecordTime() {
 
 buttom.addEventListener("click", function() {
     buttom.hidden = true;
+    clickArea.style.backgroundColor = "#00a2ffff";
     setTimeout(() => {
         startRecordTime();
-        clickArea.style.color = "green";
+        clickArea.style.backgroundColor = "#00b900";
         clickArea.addEventListener("click", () => {
             clearInterval(startRecord);
             scoreText = "your score: " + ms + "ms";
