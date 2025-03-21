@@ -7,12 +7,12 @@ let startRecord;
 
 function startRecordTime() {
     startRecord = setInterval(() => {
-        ms ++;
+        ms++;
         scoreText.innerHTML = ms + "ms";
     }, 1);
 }
 
-buttom.addEventListener("click", function() {
+buttom.addEventListener("click", function () {
     buttom.hidden = true;
     scoreText.hidden = false;
     clickArea.style.backgroundColor = "#ffcc00ff";
