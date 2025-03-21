@@ -2,8 +2,13 @@
     margin: 0;
     padding: 0;
 }
-p {
+p, a {
     font-family: sans-serif;
+}
+a {
+    padding: 10px 20px;
+    color: #006aff;
+    text-decoration: none;
 }
 #clickArea {
     height: 80vh;
