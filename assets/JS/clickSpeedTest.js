@@ -15,12 +15,13 @@ function startRecordTime() {
 buttom.addEventListener("click", function() {
     buttom.hidden = true;
     scoreText.hidden = false;
-    clickArea.style.backgroundColor = "#00a2ffff";
+    clickArea.style.backgroundColor = "#ffcc00ff";
     setTimeout(() => {
         startRecordTime();
         clickArea.style.backgroundColor = "#00b900";
         clickArea.addEventListener("click", () => {
             window.clearInterval(startRecord);
+            clickArea.style.backgroundColor = "#006aff"
         });
     }, 3000);
 });
