@@ -4,8 +4,7 @@ window.addEventListener("keydown", function (event) {
         console.log("involved input: " + inputKey);
     } else {
         if (specialKeys.includes(inputKey)) {
-            console.log("speical input: " + inputKey);
-            if (inputKey == "ArrowLeft") {
+            if (inputKey == "ArrowLeft") {1
                 if (selectLength > 0) {
                     selectLength --;
                 } else {
@@ -17,7 +16,10 @@ window.addEventListener("keydown", function (event) {
                 } else {
                     console.log("selected length is already on maxium size (" + inputLength + ")");
                 }
-            } else if (inputKey == "Backspace") {
+            } else if (inputKey == "Shift") {
+                // null
+            }
+                else if (inputKey == "Backspace") {
                 if (selectLength > 0) {
                     selectLength --;
                     inputString = inputString.slice(0, -1);
@@ -25,11 +27,12 @@ window.addEventListener("keydown", function (event) {
                     console.log("selected length is already on minium size (0)");
                 }
             } else if (inputKey == "Enter") {
-
+                // null
             }
+            console.log("speical input: " + inputKey);
         } else {
             frontString = inputString.slice(0, selectLength);
-            backString = inputString.slice(0 - selectLength, 0);
+            backString = inputString.slice(0, (0 - selectLength));
             inputString = frontString + inputKey + backString;
             selectLength ++;
         }

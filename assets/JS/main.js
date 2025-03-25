@@ -9,5 +9,5 @@ let frontString, backString;
 
 let outputLength = 0;
 
-const specialKeys = ["Enter", "Backspace", "ArrowLeft", "ArrowRight"];
-const involvedKeys = ["CapsLock", "Shift", "Control", "Alt", "Tab", "Escape", "ArrowUp", "ArrowDown"];
+const specialKeys = ["Enter", "Shift", "Backspace", "ArrowLeft", "ArrowRight"];
+const involvedKeys = ["CapsLock", "Control", "Alt", "Tab", "Escape", "ArrowUp", "ArrowDown"];
