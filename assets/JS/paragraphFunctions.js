@@ -3,5 +3,5 @@ function contextAddParagraph(output) {
     text.innerHTML += "<p id=\"" + textLength + "\">" + output + "</p>";
 }
 function displayInput() {
-    inputLine.innerHTML = inputString;
+    inputLine.innerHTML = preString + inputString;
 }
