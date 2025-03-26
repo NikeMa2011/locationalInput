@@ -13,5 +13,3 @@ let outputLength = 0;
 
 const specialKeys = ["Enter", "Shift", "Backspace", "ArrowLeft", "ArrowRight"];
 const involvedKeys = ["CapsLock", "Control", "Alt", "Tab", "Escape", "ArrowUp", "ArrowDown"];
-
-displayInput();
