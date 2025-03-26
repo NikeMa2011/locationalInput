@@ -22,6 +22,7 @@ window.addEventListener("keydown", function (event) {
             } else if (inputKey == "Backspace") {
                 if (selectLength >= 0) {
                     selectLength --;
+                    
                     inputString = inputString.slice(0, -1);
                 } else {
                     console.log("selected length is already on minium size (0)");
@@ -34,6 +35,7 @@ window.addEventListener("keydown", function (event) {
             frontString = inputString.slice(0, selectLength);
             backString = inputString.slice(selectLength);
             inputString = frontString + inputKey + backString;
+
             selectLength ++;
         }
         displayInput();
