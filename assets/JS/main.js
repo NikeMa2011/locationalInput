@@ -1,6 +1,7 @@
 const text = document.getElementById("text");
 const input = document.getElementById("input");
 const inputLine = document.getElementById("inputLine");
+const showLocation = document.getElementById("showLocation");
 
 let inputString = " ", inputKey = '';
 let selectLength = 0, inputLength = 0;

@@ -1,5 +1,6 @@
 window.addEventListener("keydown", function (event) {
     inputKey = event.key;
+    
     if (involvedKeys.includes(inputKey)) {
         console.log("involved input: " + inputKey);
     } else {

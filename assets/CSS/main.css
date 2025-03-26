@@ -5,3 +5,6 @@ span {
     color: #ffffff;
     font-family: consolas;
 }
+span #showLocation {
+    white-space: pre;
+}
