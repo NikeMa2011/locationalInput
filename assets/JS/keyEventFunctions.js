@@ -20,7 +20,7 @@ window.addEventListener("keydown", function (event) {
             } else if (inputKey == "Shift") {
                 // null
             } else if (inputKey == "Backspace") {
-                if (selectLength > 0) {
+                if (selectLength >= 0) {
                     selectLength --;
                     inputString = inputString.slice(0, -1);
                 } else {
