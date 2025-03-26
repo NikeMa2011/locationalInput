@@ -1,6 +1,6 @@
 window.addEventListener("keydown", function (event) {
     inputKey = event.key;
-    
+
     if (involvedKeys.includes(inputKey)) {
         console.log("involved input: " + inputKey);
     } else {
@@ -33,7 +33,7 @@ window.addEventListener("keydown", function (event) {
         } else {
             frontString = inputString.slice(0, selectLength);
             backString = inputString.slice(selectLength);
-            inputString = frontString + inputKey + backString;
+            inputString = "> " + frontString + inputKey + backString;
             selectLength ++;
         }
         displayInput();

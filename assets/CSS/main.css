@@ -1,10 +1,8 @@
 body {
     background-color: #000;
 }
-span {
+p {
     color: #ffffff;
     font-family: consolas;
-}
-span #showLocation {
     white-space: pre;
 }
